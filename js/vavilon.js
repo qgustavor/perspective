@@ -73,7 +73,7 @@
                 if (!this.dictionaries[this.pageLocale]) {
                     this.dictionaries[this.pageLocale] = new Dictionary(null);
                 }
-                Array.from(this.elements).forEach(function (el) {
+                [].slice.apply(this.elements).forEach(function (el) {
                     var strId = el.dataset.vavilon;
                     if (_this.dictionaries[_this.pageDict].hasString(strId)) {
                         if (!_this.dictionaries[_this.pageLocale].hasString(strId)) {
@@ -82,7 +82,7 @@
                         var rawTranslation = _this.dictionaries[_this.pageDict].strings[strId];
                         var translationParts = rawTranslation.split(/\{\d+\}/g);
                         var elementTokens = rawTranslation.match(/\{\d+\}/g) || [];
-                        var children = Array.from(el.children);
+                        var children = [].slice.apply(el.children);
                         el.innerHTML = '';
                         translationParts.forEach(function (part, index) {
                             var textNode = document.createTextNode(part);
@@ -99,7 +99,7 @@
         };
         Vavilon.prototype.registerDictionaries = function () {
             var _this = this;
-            Array.from(document.scripts)
+            [].slice.apply(document.scripts)
                 .filter(function (e) { return e.dataset.hasOwnProperty('vavilonDict'); })
                 .forEach(function (ds) {
                 var dictLocale = ds.dataset.vavilonDict.toLowerCase();

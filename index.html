@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang=en>
 
+<meta charset="utf-8">
 <title data-vavilon="title">Perspective Calculator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <script src="locales/pt.json" type="application/json" data-vavilon-dict="pt"></script>
 <script src="js/vavilon.js"></script>
@@ -9,6 +11,10 @@
 <h1 data-vavilon="title">Perspective Calculator</h1>
 
 <p data-vavilon="introduction">It finds ways to do perspective in .ass subtitles if you want rectangle to be rotated into a known tetragon. Improve your typesetting easily, just follow the below steps:</p>
+
+<div class="hidden" id="unsupported-browser" data-vavilon="unsupported-browser">
+  Your browser does not support modules. Try using other browser.
+</div>
 
 <h2 data-vavilon="step1">Step 1</h2>
 <p data-vavilon="step1-text">Find something similar to a rectangle and draw a tetragon with Aegisub's clipping tool clockwise order starting from top-left:</p>

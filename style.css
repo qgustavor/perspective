@@ -218,3 +218,10 @@ body { padding-bottom: 33vh }
 .hidden { display: none; }
 .error-msg { color: #f44336 }
 video { width: 100% }
+
+#unsupported-browser {
+  padding: 1em;
+  margin: 1em 0 100%;
+  color: #f44336;
+  border: 1px solid #f44336;
+}

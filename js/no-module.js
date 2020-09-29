@@ -1,1 +1,1 @@
-window.alert('Unsupported browser')
+document.getElementById('unsupported-browser').className = ''

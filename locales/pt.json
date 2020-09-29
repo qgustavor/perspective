@@ -12,5 +12,6 @@
   "step4": "Pronto!",
   "step4-text": "Agora só ajuste o estilo como achar melhor. Simples, não é?",
   "footer-text": "Quer saber mais? Visite {0}.",
-  "project-page": "a página do projeto"
+  "project-page": "a página do projeto",
+  "unsupported-browser": "Seu navegador não suporta módulos. Tente usar outro navegador."
 }
