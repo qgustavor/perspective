@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang=en>
+
+<title data-vavilon="title">Perspective Calculator</title>
+<link rel="stylesheet" href="style.css">
+<script src="locales/pt.json" type="application/json" data-vavilon-dict="pt"></script>
+<script src="js/vavilon.js"></script>
+
+<h1 data-vavilon="title">Perspective Calculator</h1>
+
+<p data-vavilon="introduction">It finds ways to do perspective in .ass subtitles if you want rectangle to be rotated into a known tetragon. Improve your typesetting easily, just follow the below steps:</p>
+
+<h2 data-vavilon="step1">Step 1</h2>
+<p data-vavilon="step1-text">Find something similar to a rectangle and draw a tetragon with Aegisub's clipping tool clockwise order starting from top-left:</p>
+
+<video src="https://i.imgur.com/ElMcS2c.mp4" muted loop autoplay playsinline></video>
+
+<h2 data-vavilon="step2">Step 2</h2>
+
+<p data-vavilon="step2-text">Copy and paste the \clip tag, and optionally the \pos tag too, then press the button:</p>
+<textarea id="input-field" rows="3"></textarea>
+<button id="process-btn" data-vavilon="step3-btn">Get perspective tags</button>
+
+<h2 data-vavilon="step3">Step 3</h2>
+
+<p data-vavilon="step3-text">Use one of the below tags:</p>
+<p class="error-msg hidden" data-vavilon="matching-error">Perspective matching failed. Change some of the points and try again.</p>
+<textarea id="result-field" rows="3"></textarea>
+
+<h2 data-vavilon="step4">Done!</h2>
+<p data-vavilon="step4-text">Now just style it was you want. Simple, it isn't?</p>
+<p data-vavilon="footer-text">
+  Want to know more? Check
+  <a href="https://github.com/qgustavor/perspective" data-vavilon="project-page">the project page</a>.
+</p>
+
+<script type="module" src="js/main.js"></script>
+<script nomodule src="js/no-module.js"></script>

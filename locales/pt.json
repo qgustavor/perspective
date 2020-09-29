@@ -1,0 +1,16 @@
+{
+  "title": "Calculadora de Perspectiva",
+  "introduction": "Faça perspectiva em legendas .ass em casos onde um retângulo pode ser rotacionado conforme um quadrilátero. Melhore seu typesetting facilmente, só seguir os passos:",
+  "step1": "Passo 1",
+  "step1-text": "Encontre algo parecido com um retângulo e desenhe um quadrilátero começando pelo canto superior esquerdo em sentido horário usando a ferramenta de máscara:",
+  "step2": "Passo 2",
+  "step2-text": "Copie e cole abaixo a tag \\clip, opcionalmente a tag \\pos também, e aperte o botão:",
+  "step3-btn": "Calcular perspectiva",
+  "step3": "Passo 3",
+  "step3-text": "Use uma das tags abaixo:",
+  "matching-error": "O cálculo da perspectiva falhou. Ajuste alguns pontos e tente novamente.",
+  "step4": "Pronto!",
+  "step4-text": "Agora só ajuste o estilo como achar melhor. Simples, não é?",
+  "footer-text": "Quer saber mais? Visite {0}.",
+  "project-page": "a página do projeto"
+}
